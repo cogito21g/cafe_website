@@ -3,36 +3,35 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #f2f2f2;
     color: #333;
   }
   
   /* 헤더 스타일 설정 */
   header {
-    background-color: #333;
+    background: linear-gradient(90deg, #8B4513, #A0522D); /* 카페 분위기에 어울리는 브라운 톤 그라데이션 배경 */
     color: white;
-    padding: 1rem;
+    padding: 1rem 2rem;
     text-align: center;
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
   header h1 {
     margin: 0;
     font-size: 2rem;
-    padding-bottom: 1rem; /* h1과 nav 사이 간격 추가 */
-    border-bottom: 1px solid #555; /* h1과 nav 사이 구분선 추가 */
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #A0522D;
   }
   
-  /* 네비게이션 스타일 설정 */
   nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
-    margin: 1rem 0 0; /* 상단 마진 제거, 하단 마진 추가 */
+    margin: 1rem 0 0;
   }
   
   nav ul li {
@@ -49,27 +48,46 @@ body {
   }
   
   nav ul li a:hover {
-    background-color: #555;
+    background-color: #A0522D;
   }
   
-  /* 푸터 스타일 설정 */
   footer {
-    background-color: #333;
+    background: linear-gradient(90deg, #8B4513, #A0522D); /* 카페 분위기에 어울리는 브라운 톤 그라데이션 배경 */
     color: white;
     text-align: center;
-    padding: 1rem;
-    margin-top: 2rem; /* 푸터에 상단 마진 추가 */
+    padding: 1rem 2rem;
+    margin-top: 2rem;
   }
   
-  /* 현재 페이지 링크 스타일 */
   nav ul li a.active {
     font-weight: bold;
     text-decoration: underline;
-    background-color: #555;
+    background-color: #A0522D;
   }
   
-  /* 메인 콘텐츠 패딩 설정 */
   main {
-    padding-top: 2rem; /* 고정된 헤더의 높이만큼 추가 패딩 */
+    padding-top: 2rem;
+  }
+  
+  /* 반응형 디자인 설정 */
+  @media (max-width: 768px) {
+    header, footer {
+      text-align: left;
+      padding: 1rem;
+    }
+  
+    nav ul {
+      text-align: left;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 0.5rem 0;
+    }
+  
+    nav ul li a {
+      display: block;
+      padding: 0.5rem;
+    }
   }
   
