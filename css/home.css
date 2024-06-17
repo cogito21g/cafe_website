@@ -1,8 +1,12 @@
 /* 인트로, 최신 소식, 방문자 리뷰 섹션 스타일 설정 */
 .intro, .news, .reviews {
-    padding: 1rem;
+    padding: 2rem;
     background-color: white;
-    margin: 1rem 0;
+    margin: 1rem auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
   }
   
   /* 배너 스타일 설정 */
@@ -11,5 +15,15 @@
     text-align: center;
     padding: 2rem;
     margin-top: 1rem;
+    border-radius: 5px;
+  }
+  
+  /* 리뷰 스타일 설정 */
+  .review {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
   

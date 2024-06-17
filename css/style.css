@@ -1,9 +1,10 @@
 /* 기본 바디 스타일 설정 */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
+    color: #333;
   }
   
   /* 헤더 스타일 설정 */
@@ -11,16 +12,20 @@ body {
     background-color: #333;
     color: white;
     padding: 1rem;
+    text-align: center;
   }
   
   header h1 {
     margin: 0;
+    font-size: 2rem;
   }
   
   /* 네비게이션 스타일 설정 */
   nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
+    margin: 1rem 0;
   }
   
   nav ul li {
@@ -31,6 +36,13 @@ body {
   nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
   }
   
   /* 푸터 스타일 설정 */
@@ -42,5 +54,12 @@ body {
     position: fixed;
     width: 100%;
     bottom: 0;
+  }
+  
+  /* 현재 페이지 링크 스타일 */
+  nav ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: #555;
   }
   
