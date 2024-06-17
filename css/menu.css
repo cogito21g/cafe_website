@@ -1,34 +1,65 @@
 /* 메뉴 페이지 스타일 설정 */
-.menu {
+.menu-overview {
     padding: 2rem;
     background-color: white;
     margin: 1rem auto;
-    max-width: 800px;
+    max-width: 1000px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
   
-  .menu h2 {
+  .menu-overview img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .menu-section {
+    padding: 2rem;
+    background-color: white;
+    margin: 1rem auto;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .menu-section h2 {
     margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #8B4513; /* 제목 색상 변경 */
+  }
+  
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
   }
   
   .menu-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
   }
   
   .menu-item img {
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
-    margin-right: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .menu-description {
+    text-align: center;
   }
   
   .menu-description h3 {
     margin: 0;
     font-size: 1.5rem;
+    color: #A0522D; /* 항목 제목 색상 변경 */
   }
   
   .menu-description p {
@@ -38,12 +69,8 @@
   
   /* 반응형 디자인 설정 */
   @media (max-width: 768px) {
-    .menu-item {
-      flex-direction: column;
-    }
-  
-    .menu-item img {
-      margin: 0 0 1rem 0;
+    .menu-grid {
+      grid-template-columns: 1fr;
     }
   }
   
