@@ -22,38 +22,47 @@
     max-width: 1000px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
   }
   
   .menu-section h2 {
     margin-bottom: 2rem;
     font-size: 2rem;
     color: #8B4513; /* 제목 색상 변경 */
+    text-align: center;
   }
   
-  .menu-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1rem;
+  .menu-list {
+    list-style: none;
+    padding: 0;
   }
   
   .menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 1rem;
-    text-align: center;
+    margin-bottom: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
   }
   
   .menu-item img {
-    width: 100%;
-    height: auto;
+    width: 150px;
+    height: 150px;
     border-radius: 10px;
-    margin-bottom: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .menu-item:hover {
+    transform: scale(1.05); /* 크기 증가 효과 */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* 그림자 강화 효과 */
   }
   
   .menu-description {
-    text-align: center;
+    flex: 1;
+    text-align: left;
   }
   
   .menu-description h3 {
@@ -67,10 +76,32 @@
     color: #555;
   }
   
+  .menu-price {
+    font-size: 1.5rem;
+    color: #A0522D; /* 가격 색상 */
+    text-align: right; /* 우측 정렬 */
+    min-width: 80px;
+  }
+  
   /* 반응형 디자인 설정 */
   @media (max-width: 768px) {
-    .menu-grid {
-      grid-template-columns: 1fr;
+    .menu-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .menu-item img {
+      margin: 0 0 1rem 0;
+    }
+  
+    .menu-description {
+      text-align: center;
+    }
+  
+    .menu-price {
+      text-align: center;
+      width: 100%;
+      margin-top: 1rem;
     }
   }
   
