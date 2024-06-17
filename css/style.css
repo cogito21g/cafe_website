@@ -13,11 +13,18 @@ body {
     color: white;
     padding: 1rem;
     text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
   }
   
   header h1 {
     margin: 0;
     font-size: 2rem;
+    padding-bottom: 1rem; /* h1과 nav 사이 간격 추가 */
+    border-bottom: 1px solid #555; /* h1과 nav 사이 구분선 추가 */
   }
   
   /* 네비게이션 스타일 설정 */
@@ -25,7 +32,7 @@ body {
     list-style: none;
     padding: 0;
     text-align: center;
-    margin: 1rem 0;
+    margin: 1rem 0 0; /* 상단 마진 제거, 하단 마진 추가 */
   }
   
   nav ul li {
@@ -51,9 +58,7 @@ body {
     color: white;
     text-align: center;
     padding: 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    margin-top: 2rem; /* 푸터에 상단 마진 추가 */
   }
   
   /* 현재 페이지 링크 스타일 */
@@ -61,5 +66,10 @@ body {
     font-weight: bold;
     text-decoration: underline;
     background-color: #555;
+  }
+  
+  /* 메인 콘텐츠 패딩 설정 */
+  main {
+    padding-top: 2rem; /* 고정된 헤더의 높이만큼 추가 패딩 */
   }
   

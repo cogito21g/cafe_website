@@ -9,21 +9,114 @@
     text-align: center;
   }
   
+  /* 인트로 섹션의 상단 마진 조정 */
+  .intro {
+    margin-top: 0.5rem; /* 상단 마진을 줄임 */
+  }
+  
   /* 배너 스타일 설정 */
   .banner {
     background-color: #ffcc00;
     text-align: center;
     padding: 2rem;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     border-radius: 5px;
+  }
+  
+  /* 슬라이드 컨테이너 스타일 설정 */
+  .slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 1rem auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .slide {
+    display: none;
+    width: 100%;
+  }
+  
+  .active-slide {
+    display: block;
+  }
+  
+  /* 이전/다음 버튼 스타일 설정 */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 0.5rem; /* 크기를 줄임 */
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem; /* 크기를 줄임 */
+    user-select: none;
+    background-color: transparent; /* 기본 배경 투명 */
+    border-radius: 50%; /* 둥글게 설정 */
+  }
+  
+  .prev {
+    left: 0.5rem;
+  }
+  
+  .next {
+    right: 0.5rem;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(211, 211, 211, 0.8); /* 호버 시 연한 회색 느낌 */
+  }
+  
+  /* 페이지 표시 스타일 설정 */
+  .dot-container {
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 10px; /* 크기를 더 작게 조정 */
+    width: 10px; /* 크기를 더 작게 조정 */
+    margin: 0 4px; /* 간격 조정 */
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active-dot {
+    background-color: #717171;
+  }
+  
+  /* 리뷰 섹션 스타일 설정 */
+  .reviews {
+    text-align: center; /* 텍스트를 가운데 정렬 */
   }
   
   /* 리뷰 스타일 설정 */
   .review {
     background-color: #f9f9f9;
-    padding: 1rem;
+    padding: 1.5rem; /* 패딩을 조금 더 키움 */
     margin-top: 1rem;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: block; /* 블록 요소로 설정 */
+    text-align: center; /* 텍스트를 가운데 정렬 */
+    max-width: 600px; /* 최대 너비 설정 */
+    margin-left: auto; /* 가운데 정렬을 위해 추가 */
+    margin-right: auto; /* 가운데 정렬을 위해 추가 */
+  }
+  
+  .review p {
+    margin: 0.5rem 0; /* 위아래 여백 추가 */
+  }
+  
+  .review strong {
+    display: block;
+    margin-top: 0.5rem;
+    text-align: center; /* 이름을 가운데 정렬 */
   }
   
