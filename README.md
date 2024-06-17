@@ -32,6 +32,16 @@ Cafe 프로젝트는 HTML, CSS, 그리고 현대적인 JavaScript만을 사용�
 웹 브라우저에서 `index.html` 파일을 열어 웹사이트를 확인할 수 있습니다.
 
 
+## 결과 이미지
+- ![home](./result/result_home.png)
+- ![menu](./result/result_menu.png)
+- ![event](./result/result_event.png)
+- ![reservation](./result/result_reservation.png)
+- ![contact](./result/result_contact.png)
+- ![blog](./result/result_blog.png)
+- ![gallery](./result/result_gallery.png)
+- ![result](./result/result.mov)
+
 ## 사용 기술
 - HTML
 - CSS
