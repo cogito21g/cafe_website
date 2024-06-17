@@ -1,0 +1,44 @@
+/* 블로그 포스트 상세 페이지 스타일 */
+.blog-post-detail {
+    padding: 2rem;
+    background-color: white;
+    margin: 1rem auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center; /* 가운데 정렬 */
+  }
+  
+  .blog-post-detail h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #8B4513; /* 제목 색상 변경 */
+  }
+  
+  .blog-post-image {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .blog-post-detail p {
+    margin: 0.5rem 0;
+    color: #555;
+  }
+  
+  .back-to-list {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #8B4513;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .back-to-list:hover {
+    background-color: #A0522D;
+  }
+  
