@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe - 연락처</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+  <header>
+    <h1>연락처 및 위치</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">홈</a></li>
+        <li><a href="menu.html">메뉴</a></li>
+        <li><a href="events.html">이벤트</a></li>
+        <li><a href="reservation.html">예약</a></li>
+        <li><a href="contact.html" class="active">연락처</a></li>
+        <li><a href="blog.html">블로그</a></li>
+        <li><a href="gallery.html">갤러리</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-info">
+      <h2>연락처 정보</h2>
+      <div class="contact-detail">
+        <h3>주소</h3>
+        <p>경기도 용인시 수지구 카페로 123</p>
+      </div>
+      <div class="contact-detail">
+        <h3>전화번호</h3>
+        <p>010-xxxx-xxxx</p>
+      </div>
+      <div class="contact-detail">
+        <h3>이메일</h3>
+        <p>cafe@example.com</p>
+      </div>
+    </section>
+
+    <section class="map">
+      <h2>위치</h2>
+      <div id="map"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Cafe. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>
