@@ -36,13 +36,13 @@ Cafe 프로젝트는 HTML, CSS, 그리고 현대적인 JavaScript만을 사용�
 ![home](./result/result_home.png) | 
 ![menu](./result/result_menu.png) | 
 ![event](./result/result_event.png)
-| --- | --- | --- | 
+--- | --- | --- | 
 
 ![reservation](./result/result_reservation.png) | 
 ![contact](./result/result_contact.png) |
 ![blog](./result/result_blog.png) | 
 ![gallery](./result/result_gallery.png) |
-| --- | --- | --- | --- |
+--- | --- | --- | --- |
 
 ![result](./result/result.mov)
 
