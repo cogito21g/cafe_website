@@ -39,20 +39,17 @@ Cafe 프로젝트는 HTML, CSS, 그리고 현대적인 JavaScript만을 사용�
 <p align="center"> 
    <img src="./result/result_home.png" align="center" width="32%">
    <img src="./result/result_menu.png" align="center" width="32%">
-   <figcaption align="center">2개 이미지 띄우기</figcaption>
 </p>
 
 <p align="center"> 
    <img src="./result/result_event.png" align="center" width="32%">
    <img src="./result/result_reservation.png" align="center" width="32%">
-   <figcaption align="center">2개 이미지 띄우기</figcaption>
 </p>
 <p align="center"> 
 
    <img src="./result/result_contact.png" align="center" width="32%">
    <img src="./result/result_blog.png" align="center" width="32%">
    <img src="./result/result_gallery.png" align="center" width="32%">
-   <figcaption align="center">3개 이미지 띄우기</figcaption>
 </p>
 
 
