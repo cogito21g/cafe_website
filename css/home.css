@@ -1,0 +1,15 @@
+/* 인트로, 최신 소식, 방문자 리뷰 섹션 스타일 설정 */
+.intro, .news, .reviews {
+    padding: 1rem;
+    background-color: white;
+    margin: 1rem 0;
+  }
+  
+  /* 배너 스타일 설정 */
+  .banner {
+    background-color: #ffcc00;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 1rem;
+  }
+  
