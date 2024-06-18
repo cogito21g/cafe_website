@@ -34,7 +34,7 @@ Cafe 프로젝트는 HTML, CSS, 그리고 현대적인 JavaScript만을 사용�
 
 ## 결과 이미지
 
-[result 영상](./result/result.mov)
+[result 영상](https://www.youtube.com/watch?v=XpIdt-sExeI)
 
 <p align="center"> 
    <img src="./result/result_home.png" align="center" width="32%">
